@@ -49,6 +49,16 @@ Set your API keys and run the notebook top-to-bottom.
 
 Full tool list (29+ tools across Twitter, Instagram, Reddit, TikTok) available after connecting to the MCP server.
 
+## Expected output
+
+Each section produces structured analysis from Claude, including:
+- Sentiment classifications with confidence scores
+- Competitive share-of-voice breakdowns
+- Ranked influencer lists with follower counts and engagement metrics
+- Prediction signals with bull/bear arguments
+
+The final section generates a styled HTML report you can open in any browser.
+
 ## Using XPOZ without a notebook
 
 You can also use XPOZ directly in Claude Desktop or Claude Code:
@@ -75,7 +85,28 @@ claude mcp add xpoz https://mcp.xpoz.ai/mcp \
   --header "Authorization: Bearer YOUR_XPOZ_API_KEY"
 ```
 
-See all setup options at [xpoz.ai/install](https://xpoz.ai/install).
+## Alternative: Python SDK
+
+If you prefer a direct Python API instead of MCP, XPOZ also offers a Python SDK:
+
+```bash
+pip install xpoz
+```
+
+```python
+from xpoz import XpozClient
+
+xpoz = XpozClient()  # Uses XPOZ_API_KEY env var
+results = xpoz.twitter.search_posts("NVIDIA", start_date="2026-03-24", limit=50)
+xpoz.close()
+```
+
+## Learn more
+
+- [XPOZ documentation & setup](https://xpoz.ai/install) — MCP setup for various AI platforms
+- [XPOZ MCP server on GitHub](https://github.com/XPOZpublic/xpoz-mcp) — source and tool reference
+- [XPOZ Python SDK](https://github.com/XPOZpublic/xpoz-python-sdk) — direct API access without MCP
+- [Gemini version of this cookbook](../gemini/) — same use cases with Google's Gemini
 
 ## License
 
