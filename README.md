@@ -4,10 +4,10 @@ Jupyter notebooks showing how to use [XPOZ](https://xpoz.ai) social intelligence
 
 ## Notebooks
 
-| Notebook | AI Platform | Description |
-|----------|-------------|-------------|
-| [social-intelligence-with-xpoz-claude.ipynb](social-intelligence-with-xpoz-claude.ipynb) | Claude (Anthropic) | Brand sentiment, competitive intel, influencer discovery, event monitoring |
-| [social-intelligence-with-xpoz-gemini.ipynb](social-intelligence-with-xpoz-gemini.ipynb) | Gemini (Google) | Same structure adapted for Gemini API |
+| Notebook | AI Platform | Description | Open |
+|----------|-------------|-------------|------|
+| [Claude cookbook](claude/) | Claude (Anthropic) | Brand sentiment, competitive intel, influencer discovery, event monitoring | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/XPOZpublic/xpoz-cookbooks/blob/main/claude/social-intelligence-with-xpoz-claude.ipynb) |
+| [Gemini cookbook](gemini/) | Gemini (Google) | Same use cases adapted for Gemini API | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/XPOZpublic/xpoz-cookbooks/blob/main/gemini/social-intelligence-with-xpoz-gemini.ipynb) |
 
 ## What's Covered
 
